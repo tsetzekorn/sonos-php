@@ -1,0 +1,4 @@
+client_id = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+client_secret = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+authcode = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx
+redirect_uri = https://yourserver.com/path/access_token.php
