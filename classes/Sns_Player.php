@@ -95,5 +95,18 @@ class Sns_Player{
 			return false;
 		}		
 	}
+
+	public function loadAudioClip($streamUrl,$name="Custom Stream") {
+		$body["name"] 		= $name; 
+		$body["streamUrl"] 	= $streamUrl;
+		$result = $this->connection->doRequest("/players/".$this->playerId."/audioClip",array(),$body,"POST");
+		
+		if ($result["statusCode"] == 200) {
+			return New Sns_AudioClip($result);
+			//return true;
+		} else {
+			return false;
+		}		
+	}
 }
 ?>
